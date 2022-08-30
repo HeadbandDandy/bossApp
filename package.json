@@ -2,9 +2,10 @@
   "name": "bossapp",
   "version": "1.0.0",
   "description": "Application will allow users to manage & view their employee database",
-  "main": "servers.js",
+  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
