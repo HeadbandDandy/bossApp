@@ -1,0 +1,26 @@
+{
+  "name": "bossapp",
+  "version": "1.0.0",
+  "description": "Application will allow users to manage & view their employee database",
+  "main": "servers.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeadbandDandy/bossApp.git"
+  },
+  "author": "DJ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HeadbandDandy/bossApp/issues"
+  },
+  "homepage": "https://github.com/HeadbandDandy/bossApp#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "express": "^4.18.1",
+    "inquirer": "^9.1.0",
+    "mysql2": "^2.3.3",
+    "node": "^16.17.0"
+  }
+}
