@@ -59,3 +59,15 @@ role_id: INT to hold reference to employee role
 
 manager_id: INT to hold reference to another employee that is the manager of the current employee (null if the employee has no manager)
 
+
+
+
+#### Issues with this Project
+
+For some reason I am having some trouble getting this to work. I know I have the correct code, I just might not have everything seeded correctly. 
+
+
+
+
+##### Video WalkThrough
+
