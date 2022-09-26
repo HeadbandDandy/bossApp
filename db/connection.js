@@ -5,7 +5,7 @@ const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: 'rootroot',
-    database: 'election'
+    database: 'boss_app'
 });
 
 

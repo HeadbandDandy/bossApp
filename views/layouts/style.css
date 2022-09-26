@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #065a92;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.jumbotron {
+    background-color: #d372ee;
+    margin: 10px;
+    border: 3px solid #065a92;
+    border-radius: 15px;
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: #45ee6c;
+}
+
+.container {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.card {
+    
+    border: 3px solid #45ee6c;
+    border-radius: 15px;
+
+}
+.card-header {
+    background-color: #800c9d;
+    border-radius: 15px;
+}
+
+.card-title {
+    color: #45ee6c;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS employee_db;
-CREATE DATABASE employee_db;
-USE employee_db;
+DROP DATABASE IF EXISTS boss_app;
+CREATE DATABASE boos_app;
+USE boss_app;

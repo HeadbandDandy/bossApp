@@ -5,9 +5,9 @@ const db = require('../../db/connection');
 
 const inputCheck = require('../../utils/inputCheck');
 
-//view all roles
-router.get('/roles', (req, res) => {
-    const sql = `SELECT * FROM roles`;
+// below gets all departments
+router.get('/departments', (req, res) => {
+    const sql = `SELECT * FROM departments`;
     db.query(sql, (err, rows) => {
         if (err) {
             res.status(500).json({ error: err.message });
@@ -20,9 +20,9 @@ router.get('/roles', (req, res) => {
     });
 });
 
-//select one role
-router.get('/roles/:id', (req, res) => {
-    const sql = `SELECT * FROM roles WHERE id = ?`;
+// below picks from apartments
+router.get('/departments/:id', (req, res) => {
+    const sql = `SELECT * FROM departments WHERE id = ?`;
     const params = [req.params.id];
     db.query(sql, params, (err, row) => {
         if (err) {
@@ -36,16 +36,16 @@ router.get('/roles/:id', (req, res) => {
     });
 });
 
-//add a role
-router.post('/role', ({ body }, res) => {
-    const errors = inputCheck(body, 'title', 'salary');
+// below can add a department
+router.post('/department', ({ body }, res) => {
+    const errors = inputCheck(body, 'name');
     if (errors) {
         res.status(400).json({ error: errors });
         return;
     }
-    const sql = `INSERT INTO roles (title, salary)
-    VALUES (?,?)`;
-    const params = [body.title, body.salary];
+    const sql = `INSERT INTO departments (name)
+    VALUES (?)`;
+    const params = [body.name];
 
     db.query(sql, params, (err, result) => {
         if (err) {
@@ -58,5 +58,6 @@ router.post('/role', ({ body }, res) => {
         });
     });
 });
+
 
 module.exports = router;

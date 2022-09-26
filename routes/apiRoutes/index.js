@@ -1,17 +1,14 @@
-//index modules
+
+//below contains the routes needed to complete tasks within the database
+
+
 
 const express = require('express');
-const inquirer = require('inquirer');
 const router = express.Router();
 
-
-
-
-//index routes
-router.use(require('./departmentRoutes'))
-router.use(require('./roleRoutes'))
-router.use(require('./employeeRoutes'))
-
+router.use(require('./teamRoutes'));
+router.use(require('./roleRoutes'));
+router.use(require('./positionRoutes'));
 
 
 module.exports = router;
